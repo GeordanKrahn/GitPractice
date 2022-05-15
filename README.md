@@ -1,7 +1,8 @@
-# Git Commands
+# Git Information
 
-**This file will contain git commands**
+**This file will contain git commands and other important information on Git usage and workflows**
 
+## Git Commands
 - `git help <command>` - displays the usage information for the specified command
 - `git init` - initializes a git repository
 - `git add <filepath>` - adds files or changes to the git repo for later commit.
@@ -16,6 +17,7 @@
         - Can use some other shorthand for your organisation such as `bugfix: <message>`
         - make them clear and descriptive and to the point
 - `git push` - uploads all local branch commits to the corresponding remote branch git repository.
+- `git pull` - pulls the current state, makes our working copy up to date
 - `git status` - displays information about the current state of our repository
 - `git log` - Displays information about the commit history
     -   `commit 708c6dac011fe676a480742a48f68278a0d22e1d (HEAD -> main)`  - commit ID uniquely identifies the commit
@@ -29,5 +31,13 @@
     - `git log --author=<partialString>` - displays all commits from a specified author
     - `git log --grep=<regex>` - can use regular expressions specified as a string
 
-
-        
+## Git Workflow
+-  **Trees:**
+    - In many VCS's there are two main trees
+    - These are the Repository and the Working directories.
+    - we will *checkout* the current state from the repository
+    - we will *commit* staged changes from working directory
+    - in git there will be another directory called the staging index
+        - Working -> `git add filename.ext` -> Staging Index -> `git commit filename.ext` -> Repository
+        - This can work in reverse, but is typically not done
+    - After stages files are commited to the repository, the current state can then be *checked out*
