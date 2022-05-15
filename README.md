@@ -17,3 +17,9 @@
 - `git push` - uploads all local branch commits to the corresponding remote branch git repository.
 - `git status` - displays information about the current state of our repository
 - `git log` - Displays information about the commit history
+    -   `commit 708c6dac011fe676a480742a48f68278a0d22e1d (HEAD -> main)`  - commit ID uniquely identifies the commit
+    -   `Author: Geordan Krahn <someEmail@email.com>` - The user and email associated with the commit
+    -   `Date: Sun May 15 15:26:27 2022 -0600` - Date and time of the commit
+    -   `add the git log command to the readme.md` - Commit message
+
+        
