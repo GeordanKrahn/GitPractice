@@ -21,5 +21,7 @@
     -   `Author: Geordan Krahn <someEmail@email.com>` - The user and email associated with the commit
     -   `Date: Sun May 15 15:26:27 2022 -0600` - Date and time of the commit
     -   `add the git log command to the readme.md` - Commit message
+- `git log -n #` - limits how many results to return to the terminal
+    - `git log -n 3` - will only display the 3 most recent commits
 
         
