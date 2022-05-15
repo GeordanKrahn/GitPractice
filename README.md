@@ -2,6 +2,7 @@
 
 **This file will contain git commands**
 
+- `git help <command>` - displays the usage information for the specified command
 - `git init` - initializes a git repository
 - `git add <filepath>` - adds files or changes to the git repo for later commit.
     - `git add .` - adds the current directory to be commited later. this is the common command
@@ -23,5 +24,10 @@
     -   `add the git log command to the readme.md` - Commit message
 - `git log -n #` - limits how many results to return to the terminal
     - `git log -n 3` - will only display the 3 most recent commits
+    - `git log --since=yyyy-mm-dd` - displays all commits going back to the date specified
+    - `git log --until=yyyy-mm-dd` - displays all commits going to the date specified
+    - `git log --author=<partialString>` - displays all commits from a specified author
+    - `git log --grep=<regex>` - can use regular expressions specified as a string
+
 
         
