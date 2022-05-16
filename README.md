@@ -49,7 +49,7 @@
     - Guaruntees Data Integrity
     - Git uses the ***SHA-1*** hash algorithn to create checksums
     - SHA-1 hash values are 40 character hexadecimal strings
-        - ex `bad17599f7a241e4873aba2401343452b6f41084`
+        - ex: `bad17599f7a241e4873aba2401343452b6f41084`
     - Git also uses the metadata associated within each snapshot
         - such as the parent, author, message, etc...
     - if we have a snapshot A and the commit changes, then the snapshot B will include the metadata from A for its Hash
