@@ -12,8 +12,8 @@
     - D.  [Install](#1d-install)
     - E.  [Get Git](#1e-verify)
 2. [Create a Directory](#step-2-create-directory)
-    - A.  []()
-    - B.  []()
+    - A.  [Create new folder](#2a-create-a-new-folder)
+    - B.  [Open in Terminal](#2b-open-in-terminal)
 3. [Create a Git Repository](#step-3-create-a-git-repository)
 
 ## Step 1: Install Git
