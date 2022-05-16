@@ -46,6 +46,7 @@
     - to view changes to staged files, use the `--staged` OR `--cached` flags
         - `git diff --staged`
 - `git rm <filename>` - removes a file from the project
+    - NOTE: git will automatically stage the changes when this command is used to delete files.
 
 ## Git Workflow
 -  **Trees:**
