@@ -40,9 +40,11 @@
     - `git log --until=yyyy-mm-dd` - displays all commits going to the date specified
     - `git log --author=<partialString>` - displays all commits from a specified author
     - `git log --grep=<regex>` - can use regular expressions specified as a string
-- `git diff` - This will display the changes to staged files
+- `git diff` - This will display the changes to unstaged files
     - NOTE: This will only work on unstaged files.
     - Highly recommended to see more info regarding diff command by using the help command
+    - to view changes to staged files, use the `--staged` OR `--cached` flags
+        - `git diff --staged`
 
 ## Git Workflow
 -  **Trees:**
