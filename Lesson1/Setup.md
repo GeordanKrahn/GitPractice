@@ -10,7 +10,7 @@
     - B.  [Downloads](#1b-downloads)
     - C.  [Choose OS](#1c-choose-os)
     - D.  [Install](#1d-install)
-    - E.  [Get Git](#1e-verify)
+    - E.  [Verify](#1e-verify)
 2. [Create a Directory](#step-2-create-directory)
     - A.  [Create new folder](#2a-create-a-new-folder)
     - B.  [Open in Terminal](#2b-open-in-terminal)
