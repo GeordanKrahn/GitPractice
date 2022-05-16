@@ -3,6 +3,7 @@
 - **This file will contain git commands and other important information on Git usage and workflows**
 - **You will need Git installed on your system**
 - **You can find Git [here](https://git-scm.com/)**
+- **[Lesson 1: Setup Tutorial](Lesson1/Setup.md)**
 ## Git Commands
 - `git help <command>` - displays the usage information for the specified command
 - `git init` - initializes a git repository
