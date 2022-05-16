@@ -1,0 +1,1 @@
+This file was moved from the project root to this folder using the `git mv` command

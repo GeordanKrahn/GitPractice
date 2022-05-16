@@ -52,7 +52,7 @@
         `git mv someFile.txt someOtherFile.txt`
     - to move else where:
         `git mv someFile.txt someFolder/someFile.txt`
-    - If the folder did not already exist, you will need to create it.
+    - NOTE: If the folder did not already exist, you will need to create it.
 
 ## Git Workflow
 -  **Trees:**
