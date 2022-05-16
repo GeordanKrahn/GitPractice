@@ -1,8 +1,8 @@
 # Git Information
 
-**This file will contain git commands and other important information on Git usage and workflows**
-**You will need Git installed on your system**
-**You can find Git [here](https://git-scm.com/)**
+- **This file will contain git commands and other important information on Git usage and workflows**
+- **You will need Git installed on your system**
+- **You can find Git [here](https://git-scm.com/)**
 ## Git Commands
 - `git help <command>` - displays the usage information for the specified command
 - `git init` - initializes a git repository
@@ -62,5 +62,5 @@
     - The HEAD can move between different branches in the repository
 
 ## GitHub Commands
-**Github CLI is *optional*. I will include some useful commands here. You must have it installed on your system just like Git**
-**You can find the CLI [here](https://cli.github.com/)**
+- **Github CLI is *optional*. I will include some useful commands here. You must have it installed on your system just like Git**
+- **You can find the CLI [here](https://cli.github.com/)**
