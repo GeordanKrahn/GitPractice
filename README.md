@@ -45,6 +45,7 @@
     - Highly recommended to see more info regarding diff command by using the help command
     - to view changes to staged files, use the `--staged` OR `--cached` flags
         - `git diff --staged`
+- `git rm <filename>` - removes a file from the project
 
 ## Git Workflow
 -  **Trees:**
