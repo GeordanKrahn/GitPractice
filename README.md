@@ -59,6 +59,6 @@
     - will point to the parent of the next commit
     - when a new commit is made the HEAD pointer will point to the next parent
     - The HEAD can move between different branches in the repository
-    - 
 
+## GitHub Commands
     
