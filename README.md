@@ -47,6 +47,12 @@
         - `git diff --staged`
 - `git rm <filename>` - removes a file from the project
     - NOTE: git will automatically stage the changes when this command is used to delete files.
+- `git mv <filename> <newFilename>` - This command can both move a file somewhere else, AND rename a file aswell.
+    - to rename:
+        `git mv someFile.txt someOtherFile.txt`
+    - to move else where:
+        `git mv someFile.txt someFolder/someFile.txt`
+    - If the folder did not already exist, you will need to create it.
 
 ## Git Workflow
 -  **Trees:**
