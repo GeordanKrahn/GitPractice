@@ -14,7 +14,7 @@
     - B.  [Staging Directory](#b-staging-directory)
     - C.  [Repository](#c-repository)
 3. [Putting it all together](#putting-it-all-together)
-
+    
 ## Information Commands
 
 ### A. Git Status
