@@ -30,7 +30,7 @@
 - `git pull` - pulls the current state, makes our working copy up to date
 - `git status` - displays information about the current state of our repository
 - `git log` - Displays information about the commit history
-    -   **commit 708c6dac011fe676a480742a48f68278a0d22e1d (HEAD -> main)**  - commit ID is a ***SHA-1*** **Hash** identifies the commit
+    -   **commit 708c6dac011fe676a480742a48f68278a0d22e1d (HEAD -> main)**  - commit ID is a ***SHA-1* Hash** identifies the commit
     -   **Author: Geordan Krahn <someEmail@email.com>** - The user and email associated with the commit
     -   **Date: Sun May 15 15:26:27 2022 -0600** - Date and time of the commit
     -   **add the git log command to the readme.md** - Commit message
@@ -49,6 +49,8 @@
     - NOTE: git will automatically stage the changes when this command is used to delete files.
     - to remove an entire folder and its contents:
         - `git rm -r <folderName>`
+    - To remove folder from Git, but NOT your filesystem:
+        - `git rm -r --cached <folderName>`
 - `git mv <filename> <newFilename>` - This command can both move a file somewhere else, AND rename a file aswell.
     - to rename:
         `git mv someFile.txt someOtherFile.txt`
