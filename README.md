@@ -12,6 +12,7 @@
 
 ## Lessons
 - **[Lesson 1: Setup Tutorial](Lesson1/Setup.md)**
+- **[Lesson 2: Core Usage](Lesson2/CoreUsage.md)**
 ## Git Commands
 - `git help <command>` - displays the usage information for the specified command
 - `git init` - initializes a git repository
