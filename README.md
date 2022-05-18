@@ -4,6 +4,7 @@
 - **You will need Git installed on your system**
 - **You can find Git [here](https://git-scm.com/)**
 
+
 ## Contents
 1.  [Lessons](#lessons)
 2.  [Git Commands](#git-commands)
@@ -41,11 +42,16 @@
     - `git log --until=yyyy-mm-dd` - displays all commits going to the date specified
     - `git log --author=<partialString>` - displays all commits from a specified author
     - `git log --grep=<regex>` - can use regular expressions specified as a string
+    - To exit the log before or when you reach the `(END)` statement you can press `q`.
+    - To display a full page of results at once, press `z`.
+
 - `git diff` - This will display the changes to unstaged files
     - NOTE: This will only work on unstaged files.
     - Highly recommended to see more info regarding diff command by using the help command
     - to view changes to staged files, use the `--staged` OR `--cached` flags
         - `git diff --staged`
+    - To exit the diff tool before or when you reach the `(END)` statement you can press `q`.
+    - To display a full page of changes at once, press `z`.
 - `git rm <filename>` - removes a file from the project
     - NOTE: git will automatically stage the changes when this command is used to delete files.
     - to remove an entire folder and its contents:
