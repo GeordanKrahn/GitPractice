@@ -44,7 +44,7 @@
     - `git log --grep=<regex>` - can use regular expressions specified as a string
     - To exit the log before or when you reach the `(END)` statement you can press `q`.
     - To display a full page of results at once, press `z`.
-
+- `git show <SHA-1>` - displays only the commit. Can use partial search for SHA-1 for that commit
 - `git diff` - This will display the changes to unstaged files
     - NOTE: This will only work on unstaged files.
     - Highly recommended to see more info regarding diff command by using the help command
@@ -52,6 +52,8 @@
         - `git diff --staged`
     - To exit the diff tool before or when you reach the `(END)` statement you can press `q`.
     - To display a full page of changes at once, press `z`.
+- `git diff <old commit SHA-1>..<new commit SHA-1>` - displays changes between 2 specified commits
+    - can use HEAD as argument, will use the SHA-1 for where the HEAD points to.
 - `git rm <filename>` - removes a file from the project
     - NOTE: git will automatically stage the changes when this command is used to delete files.
     - to remove an entire folder and its contents:
