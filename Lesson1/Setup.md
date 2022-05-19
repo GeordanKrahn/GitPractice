@@ -69,7 +69,7 @@ If you have not already have Git installed on your machine, do that
 - Open the directory in the Terminal or navigate to it via the CLI
     - **NOTE: *if you have spaces in the folder and file names, you will need the path to be in "quotes"***
 
-- On a Windows systems the command to **Change Directory** is `cd`
+- The command to **Change Directory** is `cd`
     - **NOTE: *if you are unsure of the filepath, right-click inside your directory, choose properties and note the filepath. You will need to add the name of your new directory to the end of that filepath.***
     - `Right-click` -> `Properties`
 
