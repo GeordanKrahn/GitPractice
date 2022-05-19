@@ -50,6 +50,8 @@ If you have not already have Git installed on your machine, do that
 
     ![SuccessImage](Images/Success.PNG)
 
+    ![Command](Images/Bash2.PNG)
+
 - Congrats, you now have Git installed on your machine.
 
 ## Step 2: Create Directory
@@ -78,11 +80,18 @@ If you have not already have Git installed on your machine, do that
 
     ![Command](Images/Command.PNG)
 
-    - Type `cd <Filepath>`
+    - You can also use the Bash if you prefer
+
+    ![Bash](Images/Bash.PNG)
+
+    ![Bash](Images/Bash3.PNG)
+
+    - Type `cd <Filepath>` (works in Bash)
 
     ![CommandPrompt](Images/CommandPrompt1.PNG)
 
     - optionally you may use the `dir` command and navigate manually
+    - `ls` for Bash
 
 ## Step 3: Create a Git Repository
 - type the following command 
@@ -92,7 +101,11 @@ If you have not already have Git installed on your machine, do that
 
     ![CommandPrompt](Images/CommandPrompt2.PNG)
 
+
 - optionally you can use Git Bash or Git GUI to create your repo.
+
+    ![Command](Images/Bash4.PNG)
+
 - in Windows Explorer, if you can view hidden folders and files, you may have noticed a new folder named .git
 
     ![Explorer](Images/Explorer.PNG)
