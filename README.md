@@ -68,6 +68,7 @@
     - to move else where:
         `git mv someFile.txt someFolder/someFile.txt`
     - NOTE: If the folder did not already exist, you will need to create it.
+- `git checkout <SHA-1> -- <filename>` - This will revert a file back to an older version using the SHA-1 from the commit for the version you may need.
 
 ## Git Workflow
 -  **Trees:**
