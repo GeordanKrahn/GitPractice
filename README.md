@@ -19,7 +19,7 @@
 - `git init` - initializes a git repository
 - `git add <filepath>` - adds files or changes to the git repo for later commit.
     - `git add .` - adds the current directory to be commited later. this is the common command
-- `git commit -m "<commit message>"` - stages our changes to the git repository. Must have a commit message
+- `git commit -m "<commit message>"` - staged changes added to the git repository. Must have a commit message
     - try to keep the message single line and under 50 characters
     - Start with the single line, then can move on to multi line messages if necessary
         - try to keep 72 characters or less for multiline
@@ -28,6 +28,8 @@
         - Can add tracking numbers such as `#9` if there is a specific issue you would like to be referenced in the message
         - Can use some other shorthand for your organisation such as `bugfix: <message>`
         - make them clear and descriptive and to the point
+- `git commit` - not supplying `-m` flag will allow for a multiline commit message. changes will be commited when the message file is saved. Empty messages will abort commit.
+- `git commit -a` - commonly used with `-m` flag, staged tracked files in working directory AND commits them to repository. Untracked files and changes will be ignored. Dropping `-m` flag allows multiline commit message.
 - `git push` - uploads all local branch commits to the corresponding remote branch git repository.
 - `git pull` - pulls the current state, makes our working copy up to date
 - `git status` - displays information about the current state of our repository
