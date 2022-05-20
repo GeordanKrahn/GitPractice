@@ -69,6 +69,10 @@
         `git mv someFile.txt someFolder/someFile.txt`
     - NOTE: If the folder did not already exist, you will need to create it.
 - `git checkout <SHA-1> -- <filename>` - This will revert a file back to an older version using the SHA-1 from the commit for the version you may need.
+- `git restore <filename>` - discards changes to the working directory
+    - `git restore --staged <filename>` - discards staged changes, places them back into working directory
+    - `git restore --staged --working <filename>` - discards changed to both staged directory and working directory
+- `git revert <SHA-1>` - creates a new commit which takes the old configuration from the SHA-1 provided. This does NOT undo changes, just supplies the old configuration as new changes in the history.
 
 ## Git Workflow
 -  **Trees:**
