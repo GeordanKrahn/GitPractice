@@ -75,6 +75,12 @@
     - `git restore --staged --working <filename>` - discards changed to both staged directory and working directory
 - `git revert <SHA-1>` - creates a new commit which takes the old configuration from the SHA-1 provided. This does NOT undo changes, just supplies the old configuration as new changes in the history.
 - `git ls-tree <SHA-1>` - Lists the tree contents
+- `git clean -<flag> <filename>` - remove untracked from the working directory, must use flags
+    - **Be careful**, this is a ***destructive process*** and you may not want to lose the new files you are working on. You may want to consider adding them, then removing the files from the project using `git rm --cached <filename>` instead and then add it to your **.gitignore**. This way you will have a history of these changes.
+    - `git clean -i` - interactive mode - shows what *would* be deleted, and allows interactive cleaning
+    - `git clean -n` - does a *dry run* and shows you what changes *would* be made
+    - `git clean -f` - deletes the untracked files.
+    - `git clean -d` - recurses into untracked directories. does nothing if any path is specified
 
 ## Git Workflow
 -  **Trees:**
