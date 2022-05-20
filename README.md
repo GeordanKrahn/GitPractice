@@ -39,7 +39,7 @@
     -   **Author: Geordan Krahn <someEmail@email.com>** - The user and email associated with the commit
     -   **Date: Sun May 15 15:26:27 2022 -0600** - Date and time of the commit
     -   **add the git log command to the readme.md** - Commit message
-- `git log -n #` - limits how many results to return to the terminal
+    - `git log -n #` - limits how many results to return to the terminal
     - `git log -n 3` - will only display the 3 most recent commits
     - `git log --since=yyyy-mm-dd` - displays all commits going back to the date specified
     - `git log --until=yyyy-mm-dd` - displays all commits going to the date specified
@@ -55,7 +55,7 @@
         - `git diff --staged`
     - To exit the diff tool before or when you reach the `(END)` statement you can press `q`.
     - To display a full page of changes at once, press `z`.
-- `git diff <old commit SHA-1>..<new commit SHA-1>` - displays changes between 2 specified commits
+    - `git diff <old commit SHA-1>..<new commit SHA-1>` - displays changes between 2 specified commits
     - can use HEAD as argument, will use the SHA-1 for where the HEAD points to.
 - `git rm <filename>` - removes a file from the project
     - NOTE: git will automatically stage the changes when this command is used to delete files.
@@ -74,6 +74,7 @@
     - `git restore --staged <filename>` - discards staged changes, places them back into working directory
     - `git restore --staged --working <filename>` - discards changed to both staged directory and working directory
 - `git revert <SHA-1>` - creates a new commit which takes the old configuration from the SHA-1 provided. This does NOT undo changes, just supplies the old configuration as new changes in the history.
+- `git ls-tree <SHA-1>` - Lists the tree contents
 
 ## Git Workflow
 -  **Trees:**
