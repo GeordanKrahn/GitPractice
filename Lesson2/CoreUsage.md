@@ -65,6 +65,28 @@
     ![Git Status](Images/Status7.PNG)
 
 ### B. Git Diff
+- The Following Command will show you a comparrison between your working tree and a commit
+- `git diff` - This will display the changes to unstaged files
+
+    ![Git Status](Images/Diff1.PNG)
+    - To exit the diff tool, press `q`.
+    - To display a full page, press `z`.
+- after adding using `git add <filename>`, the files will be *'staged'*
+
+    ![Git Status](Images/Diff2.PNG)
+
+- the diff command no longer does anything
+
+- `git diff --staged` - to view changes to staged files
+
+    ![Git Status](Images/Diff3.PNG)
+
+- `git diff <old commit SHA-1>..<new commit SHA-1>` - displays changes between 2 specified commits
+
+    ![Git Status](Images/Diff4.PNG)
+    - can use HEAD as argument, will use its SHA-1.
+    - using `~n` where n is any number of parent levels to go back will replace with the argument with the necessary SHA-1 for that commit
+
 
 ### C. Git Show
 
