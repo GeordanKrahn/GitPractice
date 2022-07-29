@@ -104,6 +104,30 @@
     - To print next line press `Enter`.
     
 ### D. Git Log
+- `git log` - Displays information about the commit history
+
+    ![Git Status](Images/Log.PNG)
+
+- `commit 708c6dac011fe676a480742a48f68278a0d22e1d (HEAD -> main)`
+    - `Commit ID` is a SHA-1 Hash which identifies the commit
+
+- Some important information associated with each commit:
+    - `Author` - The user and email associated with the commit
+    - `Date` - Date and time of the commit
+    - `Commit message` (All commits must have one)
+
+- We can specify which commits we want to see in the commit history, our log.
+
+- Useful Flags:
+    - `-n #` - limits how many results to return to the terminal
+    - `-n 3` - will only display the 3 most recent commits
+    - `--since=yyyy-mm-dd` - displays all commits going back to the date specified
+    - `--until=yyyy-mm-dd` - displays all commits going to the date specified
+    - `--author=<partialString>` - displays all commits from a specified author
+    - `--grep=<regex>` - can use regular expressions specified as a string
+- To exit the log before or when you reach the (END) statement you can press `q`.
+- To display a full page of results at once, press `z`.
+- To print the next line, press `Enter`.
 
 ## Understanding the Trees
 
