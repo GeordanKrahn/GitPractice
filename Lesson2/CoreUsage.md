@@ -11,6 +11,10 @@
     - B.  [Git diff](#b-git-diff)
     - C.  [Git show](#c-git-show)
     - D.  [Git log](#d-git-log)
+2. [Core Use](#understanding-the-trees)
+    - A.  [Working Directory](#a-working-directory)
+    - B.  [Staging Directory](#b-staging-directory)
+    - C.  [Repository](#c-repository)
     
 ## Information Commands
 - The following commands can tell you what the current state (or previous state) your repository is in.
@@ -124,3 +128,39 @@
 - To exit the log before or when you reach the (END) statement you can press `q`.
 - To display a full page of results at once, press `z`.
 - To print the next line, press `Enter`.
+
+## Understanding the Trees
+- To make the most out of using git, you should understand the trees
+### A. Working Directory
+- The working directory is where all of your current changes are made. 
+- These changes may include tracked files with changes, or entirely new files which will need to be tracked.
+- To begin tracking files, or changes, you will need to add the changes to the staging directory
+- It is good practice to use `git status` to view your *untracked* changes.
+- You may also use `git diff`
+- DO review your changes before staging them.
+- `git add <filename>`
+
+    ![Git Status](Images/Add.PNG)
+    - `git add .` this adds all changes in the current folder and all subfolders.
+
+### B. Staging Directory
+- The staging directory is where all changes will remain until they are commited, or unstaged.
+- It is good practice to use `git status` to view your *tracked* changes.
+- You may also use `git diff --staged`
+- DO review your changes before committing them.
+- `git commit -m`
+
+    ![Git Status](Images/Commit.PNG)
+
+### C. Repository
+- This directory is where the tracked changes are saved.
+- Once a change has made it to this point, we will have a rigid history of that change until we delete our repository.
+- We can remove changes, however this is highly discouraged, as we should want to keep track of every change to our repo.
+- To properly remove a change but still have a history, use the `git rm --cached` command
+- If you have a remote repo set up, you can push your local changes to your remote from this point.
+
+    ![Git Status](Images/push.PNG)
+    - Here we have no remote set up
+
+    ![Git Status](Images/push2.PNG)
+    - Here we have a remote set up
