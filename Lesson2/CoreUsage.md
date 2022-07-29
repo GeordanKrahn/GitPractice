@@ -71,6 +71,7 @@
     ![Git Status](Images/Diff1.PNG)
     - To exit the diff tool, press `q`.
     - To display a full page, press `z`.
+    - To print next line press `Enter`.
 - after adding using `git add <filename>`, the files will be *'staged'*
 
     ![Git Status](Images/Diff2.PNG)
@@ -89,7 +90,19 @@
 
 
 ### C. Git Show
+- When we only want to view a single commits changes in isolation, we can use `git show`
 
+- `git show <Sha-1>` shows all changes for the commit associated with the Sha-1.
+
+    ![Git Status](Images/Show.PNG)
+    - If the Sha-1 is unspecified, will use the current HEAD Sha-1.
+    - Can use HEAD to specify SHA-1
+        - ~n to go back n number of commits
+        - ^ to go back a single commit
+    - Like the Diff Tool, To exit, press `q`.
+    - To display a full page, press `z`.
+    - To print next line press `Enter`.
+    
 ### D. Git Log
 
 ## Understanding the Trees
