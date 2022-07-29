@@ -150,14 +150,14 @@
 - DO review your changes before committing them.
 - `git commit -m`
 
-    ![Git Status](Images/Commit.PNG)
+    ![Git Status](Images/commit.PNG)
 
 ### C. Repository
 - This directory is where the tracked changes are saved.
 - Once a change has made it to this point, we will have a rigid history of that change until we delete our repository.
 - We can remove changes, however this is highly discouraged, as we should want to keep track of every change to our repo.
 - To properly remove a change but still have a history, use the `git rm --cached` command
-- If you have a remote repo set up, you can push your local changes to your remote from this point.
+- If you have a `remote` repo set up, you can push your local changes to your remote from this point.
 - If you are using BASH, you will need your `username` and `personal access token` to push.
 - If you are using a tool which allows Github integration (or another remote VCS) you should be signed in. (ex. Visual Studio Code)
 
