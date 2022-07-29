@@ -11,10 +11,6 @@
     - B.  [Git diff](#b-git-diff)
     - C.  [Git show](#c-git-show)
     - D.  [Git log](#d-git-log)
-2. [Understanding the Trees](#understanding-the-trees)
-    - A.  [Working Directory](#a-working-directory)
-    - B.  [Staging Directory](#b-staging-directory)
-    - C.  [Repository](#c-repository)
     
 ## Information Commands
 - The following commands can tell you what the current state (or previous state) your repository is in.
