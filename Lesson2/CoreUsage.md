@@ -15,6 +15,7 @@
     - A.  [Working Directory](#a-working-directory)
     - B.  [Staging Directory](#b-staging-directory)
     - C.  [Repository](#c-repository)
+3. [See Also](#see-also)
     
 ## Information Commands
 - The following commands can tell you what the current state (or previous state) your repository is in.
@@ -166,3 +167,8 @@
 
     ![Git Status](Images/push2.PNG)
     - Here we have a remote set up
+
+## See Also
+- **[Lesson 3: Using Branches](../Lesson3/Branching.md)**
+- **[Appendix](../Appendix/Appendix.md)**
+- **[Main Menu](../README.md)**

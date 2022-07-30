@@ -15,6 +15,7 @@
     - A.  [Create new folder](#2a-create-a-new-folder)
     - B.  [Open in Terminal](#2b-open-in-terminal)
 3. [Create a Git Repository](#step-3-create-a-git-repository)
+4. [See Also](#see-also)
 
 ## Step 1: Install Git
 If you have not already have Git installed on your machine, do that
@@ -111,3 +112,8 @@ If you have not already have Git installed on your machine, do that
     ![Explorer](Images/Explorer.PNG)
 
 - Your new git repo has now been setup and will be able to keep track of any changes you make. In the next lesson I will demonstrate how to make use of your git repo
+
+## See Also
+- **[Lesson 2: Core Usage](../Lesson2/CoreUsage.md)**
+- **[Appendix](../Appendix/Appendix.md)**
+- **[Main Menu](../README.md)**
