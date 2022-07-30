@@ -91,7 +91,7 @@
 |`git clean -<flag> <filename>`||
 ||remove untracked from the working directory, must use flags
 ||**Be careful**, this is a ***destructive process*** and you may not want to lose the new files you are working on. 
-||You may want to consider adding them, then removing the files from the project using `git rm --cached <filename>` instead and then add it to your **.gitignore**. This way you will have a history of these changes.|
+||You may want to consider adding them, then removing the files from the project using `git rm -r <filename>` instead and then add it to your **.gitignore**. This way you will have a history of these changes.|
 |---|---|
 |`git clean -i`|interactive mode - shows what *would* be deleted, and allows interactive cleaning|
 |`git clean -n`|does a *dry run* and shows you what changes *would* be made|
