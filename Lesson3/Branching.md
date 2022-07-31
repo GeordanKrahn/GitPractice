@@ -1,5 +1,10 @@
 # Using Branches
-This is perhaps the most powerful aspect of version control. It is essential to be able to work in a team while not ruining eachothers work. Branches allow us to work on separate tasks without destroying the main branch. If the work is of good quality and little to no conflicts, then they will be merged. Branches with many conflicts or with poor quality code can be easily deleted without touching the main branch.
+*This is perhaps the most powerful aspect of version control. It is essential to be able to work in a team while not ruining eachothers work. Branches allow us to work on separate tasks without destroying the main branch. If the work is of good quality and little to no conflicts, then they will be merged. Branches with many conflicts or with poor quality code can be easily deleted without touching the main branch.*
+
+**For this tutorial i will be describing what branches are and how to use them.**
+
+**DISCLAIMER**
+- *This tutorial uses examples for **Windows 10**. These instructions may differ for **Linux** and **Mac OSX**.*
 
 ## Contents
 1. [Introduction](#introduction)
