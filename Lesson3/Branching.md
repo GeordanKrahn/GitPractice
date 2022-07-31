@@ -1,4 +1,5 @@
 # Using Branches
+This is perhaps the most powerful aspect of version control. It it essential to be able to work in team while not ruining eachothers work. Branches allow us to work on separate tasks without destroying the main branch. If the work is of good quality and little to no conflicts, then they will be merged. Branches with many conflicts or with poor quality code can be easily deleted without touching the main branch.
 
 ## Contents
 1. [Introduction](#introduction)
@@ -16,7 +17,13 @@
     - A. [Merge](#merge)
     - B. [Conflicts](#conflicts)
     - C. [Resolving Conflicts](#resolving-conflicts)
-4. [See Also](#see-also)
+    - D. [Avoiding Conflicts](#avoiding-conflicts)
+4. [Stash Changes](#stash-changes)
+    - A. [Saving](#saving)
+    - B. [Viewing](#viewing)
+    - C. [Receiving](#receiving)
+    - D. [Deleting](#deleting)
+5. [See Also](#see-also)
 
 ## Introduction
 
@@ -167,12 +174,102 @@ When we make changes to our project, especially in a team, it becomes necessary 
     ![Branch](Images/Reset.PNG)
 
 ## Merging
+- Merging allows us to add the changes from a branch to a recieving branch.
+- There are 2 ways that a merge can occer
+    - The both branches have there own changes before merge
+    - only the separate branch has changes before merge
+- The diagram below illustrates this concept
+```
+Both branches have changes:
+
+    main1 -> main2 -> main3 -> main4 -> main5 -> main6
+              \                                  /
+                - branch1 -> branch2 -> branch3 -
+```
+```
+Only one branch has changes:
+
+    main1 -> main2 ---------------------------> main3
+              \                                  /
+                - branch1 -> branch2 -> branch3 -
+
+```
 
 ### Merge
+- Lets assume changes were made
+
+    ![Branch](Images/File3.PNG)
+
+    ![Branch](Images/Log.PNG)
+
+- First, change to the branch which will recieve changes
+
+    ![Branch](Images/Checkout4.PNG)
+
+- Note the log
+
+    ![Branch](Images/Log2.PNG)
+    - Use `git diff <Branch>..<Branch>` to compare the changes.
+
+- Use `git merge <Branch>` to merge the changes on the other branch, to the current branch. If there are any conflicts, you will need to resolve them..
+
+    ![Branch](Images/Merge.PNG)
+
+- You may want a visual representation of your repository
+- use `git log --graph`. The `--graph` flag will display a text representation of the structure of the repo.
+- Can combine with other formatting flags
+
+    ![Branch](Images/Log3.PNG)
+    ```
+    --all       - displays all refs in refs/ as commits. 
+    --decorate  - prints out the ref names of the commits. 
+    --oneline   - condenses the data to a single line.
+    ```
 
 ### Conflicts
+- Conflicts occur when changes to the same lines in files appear on both branches.
+- You will need to decide which branches changes you want to keep.
+- The following is a representation of this.
+
+    ![Branch](Images/Log4.PNG)
+
+- The following is what happens when a merge is attempted.
+
+    ![Branch](Images/Merge2.PNG)
 
 ### Resolving Conflicts
+- You can abort the merge, manually handle the changes, or let a tool handle the merge conflict. I will demonstrate how to manually handle the changes.
+- Your text editor should pop open after this so you can fix the conflicts. If not, you should inspect the files which are causing the conflicts and attempt to fix them.
+
+    ![Branch](Images/File4.PNG)
+    - Visual Studio Code is one of many powerful editors available. Save the changes to the file and git should handle the rest of the merge.
+
+- After saving, make sure to add and commit those changes, or the merge wont work.
+
+    ![Branch](Images/Merge3.PNG)
+
+- Now lets look at the branches
+
+    ![Branch](Images/Log5.PNG)
+
+- To abort the merge while in the MERGING state, use the `--abort` flag for the `git merge` command.
+
+### Avoiding Conflicts
+**To prevent conflicts from occuring:**
+- try keeping changes atomic (single line changes)
+- try to keeps commits atomic as well.(one or few changes)
+- Avoid creating whitespace in files
+- Merge changes frequently.
+
+## Stash Changes
+
+### Saving
+
+### Viewing
+
+### Receiving
+
+### Deleting
 
 ## See Also
 - **[Lesson 4: Working With Remotes](../Lesson4/Remotes.md)**
