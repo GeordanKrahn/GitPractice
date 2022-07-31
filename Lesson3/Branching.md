@@ -1,5 +1,5 @@
 # Using Branches
-This is perhaps the most powerful aspect of version control. It it essential to be able to work in team while not ruining eachothers work. Branches allow us to work on separate tasks without destroying the main branch. If the work is of good quality and little to no conflicts, then they will be merged. Branches with many conflicts or with poor quality code can be easily deleted without touching the main branch.
+This is perhaps the most powerful aspect of version control. It is essential to be able to work in a team while not ruining eachothers work. Branches allow us to work on separate tasks without destroying the main branch. If the work is of good quality and little to no conflicts, then they will be merged. Branches with many conflicts or with poor quality code can be easily deleted without touching the main branch.
 
 ## Contents
 1. [Introduction](#introduction)
@@ -32,6 +32,7 @@ When we make changes to our project, especially in a team, it becomes necessary 
 
 - In Git, we start off with a **Main** branch.
 - We can create branches off of the **Main**.
+- We can create branches off of other branches too.
 
 ### View Branches
 - To view the branches in your repo, use `git branch`
@@ -262,14 +263,57 @@ Only one branch has changes:
 - Merge changes frequently.
 
 ## Stash Changes
+- The stash is another directory in your git repository
+- When you need to switch branches, but you have changes in your working directory, you can stash the changes for later.
+- By default, `git stash` does not save untracked files, as these wont cause conflicts
+    - To stash untracked files, use the `-u` flag
+
+    ![Branch](Images/File5.PNG)
+
+- When attempting to switch branches, the following error appears
+
+    ![Branch](Images/Checkout5.PNG)
+    - One obvious way to fix this is by commiting your changes, but we can use the stash to store these changes if needed.
+
+- When you stash changes, they will be available from all other branches.
 
 ### Saving
+- Use `git stash save "title"` to stash your changes
+
+    ![Branch](Images/Stash.PNG)
+    - Note the status after stashing
+
+- After stashing, the working directory is now empty.
 
 ### Viewing
+- Use the `git stash list` command to view a set of changes in the stash without loading them.
+
+    ![Branch](Images/Stash2.PNG)
+    - the stash is a pointer to a set of changes.
+    - note the syntax `stash@{0}`.
+    - the `{}` contain the index for the stash.
+
+- Use `git stash show -p Stash@{index}` command to view the changes.
+    - `-p` allows us to see what the changes are.
+
+    ![Branch](Images/Stash3.PNG)
 
 ### Receiving
+- use `git stash pop` command to add the stash to the working directory. Be careful of conflicts. Resolve them first.
+- Can also use `git stash apply`, which does not remove the changes from the stash.
+
+    ![Branch](Images/Stash4.PNG)
+    - Notice how the stash list is empty, `pop` removes the stashed changes.
+    - use `apply` to load the changes without removing the stash.
 
 ### Deleting
+- `pop` will delete the entry after it is loaded.
+- If you use `apply` to load changes and end up committing them, make sure you delete the stash for those changes.
+- use `git stash drop stash@{index}` to remove the stashed changes.
+
+    ![Branch](Images/Stash5.PNG)
+
+- use `git stash clear` to remove all sets of stashed changes
 
 ## See Also
 - **[Lesson 4: Working With Remotes](../Lesson4/Remotes.md)**
