@@ -75,9 +75,11 @@ When we make changes to our project, especially in a team, it becomes necessary 
 - The following commands allow us to see the contents of the HEAD file in the .git directory. This is useful if you want to know what the HEAD points to.
 
     - On Linux or BASH
+
     ![Branch](Images/CAT.PNG)
 
     - On Windows
+
     ![Branch](Images/TYPE.PNG)
 
 - ***Remember**, the HEAD always points to the most recent commit in a branch*
@@ -139,7 +141,7 @@ When we make changes to our project, especially in a team, it becomes necessary 
 - `git branch -d <Branch name>`
 
     ![Branch](Images/Branch7.PNG)
-    ***NOTE:** YOU CANNOT DELETE THE **CURRENT BRANCH***
+    * ***NOTE:** YOU CANNOT DELETE THE **CURRENT BRANCH***
 ### Resetting Branches
 - Resetting will change the state of the files in the staging index and working directory for the desired commit.
 - This will move the HEAD to point to the desired commit.
