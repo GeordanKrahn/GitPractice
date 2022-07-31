@@ -12,8 +12,11 @@
     - E. [Renaming Branches](#renaming-branches)
     - F. [Deleting Branches](#deleting-branches)
     - G. [Resetting Branches](#resetting-branches)
-    - H. [Merging](#merging)
-3. [See Also](#see-also)
+3. [Merging](#merging)
+    - A. [Merge](#merge)
+    - B. [Conflicts](#conflicts)
+    - C. [Resolving Conflicts](#resolving-conflicts)
+4. [See Also](#see-also)
 
 ## Introduction
 
@@ -111,14 +114,33 @@ When we make changes to our project, especially in a team, it becomes necessary 
 ### Comparing Branches
 - To compare a branch, just use `git diff <Branch name>..<Branch name>`
 
-    
+    ![Branch](Images/Diff.PNG)
+
 ### Renaming Branches
+- Use the `-m` flag of the `git branch` command to rename a branch
+- `git branch -m <old branch> <new branch>`
 
+    ![Branch](Images/Branch5.PNG)
+    - Notice the new name in the blue text.
 ### Deleting Branches
+- Maybe your changes wont be useful, or have too many conflicts to merge. Whatever the case, you this branch is no longer useful.
 
+    ![Branch](Images/Branch6.PNG)
+
+- Delete a branch by using `-d` flag for the `git branch` command.
+- `git branch -d <Branch name>`
+
+    ![Branch](Images/Branch7.PNG)
+    ***NOTE:** YOU CANNOT DELETE THE **CURRENT BRANCH***
 ### Resetting Branches
 
-### Merging
+## Merging
+
+### Merge
+
+### Conflicts
+
+### Resolving Conflicts
 
 ## See Also
 - **[Lesson 4: Working With Remotes](../Lesson4/Remotes.md)**
