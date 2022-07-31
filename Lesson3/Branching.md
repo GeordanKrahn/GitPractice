@@ -61,8 +61,57 @@ When we make changes to our project, especially in a team, it becomes necessary 
     ![Branch](Images/Branch4.PNG)
     - The current branch is highlighted in green
 
-### Comparing Branches
+- The following commands allow us to see the contents of the HEAD file in the .git directory. This is useful if you want to know what the HEAD points to.
 
+    - On Linux or BASH
+    ![Branch](Images/CAT.PNG)
+
+    - On Windows
+    ![Branch](Images/TYPE.PNG)
+
+- ***Remember**, the HEAD always points to the most recent commit in a branch*
+
+- Now that we are on the new branch, lets make some changes. I will create a folder with a single file, and edit a line in the README.md
+
+    ![Branch](Images/File.PNG)
+
+- using `git status` we can see the staging directory only retains changes on the current branch
+
+    ![Branch](Images/Status.PNG)
+
+- Once committed, if we switch back to the main branch using `git chechout main`. Note the structure of the directory after we switch. This is because main has been untouched by the changes to the other branch.
+
+    ![Branch](Images/File2.PNG)
+
+- We can create a branch and switch to it by using the `-b` flag for the `git checkout` command.
+
+    ![Branch](Images/Checkout2.PNG)
+
+- We do not need to be on main to create a new branch. A branch can be made anytime from the current branch. So if the current branch is called TestBranch and we create a new branch called NewTestBranch, it will be a branch of TestBranch.
+
+- Suppose we make changes to the working directory on this new new branch. If we switch to main, those changes may be lost...
+
+    ![Branch](Images/Checkout3.PNG)
+    - luckily git aborts this task. Go back to the other branch and add or discard those changes. Then you can safely return to the main branch.
+
+**Rules When Switching Branches With Un-Commited Changes**
+```
+    1.  Switching Branches is not possible if changes to the current
+        branch conflict with the destination branch.
+    
+    2.  Switching is permissible if changes in the working directory 
+        will not conflict with the destination branch.
+
+    3.  Switching is permissible for untracked files.
+```
+
+   - *If there are conflicts, there are a few options. You may `commit` the changes, `discard` the changes, or `stash` the changes.*
+
+
+### Comparing Branches
+- To compare a branch, just use `git diff <Branch name>..<Branch name>`
+
+    
 ### Renaming Branches
 
 ### Deleting Branches
