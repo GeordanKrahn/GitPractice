@@ -133,6 +133,38 @@ When we make changes to our project, especially in a team, it becomes necessary 
     ![Branch](Images/Branch7.PNG)
     ***NOTE:** YOU CANNOT DELETE THE **CURRENT BRANCH***
 ### Resetting Branches
+- Resetting will change the state of the files in the staging index and working directory for the desired commit.
+- This will move the HEAD to point to the desired commit.
+
+**There are 3 types of reset:**
+```
+    Soft
+    - Moves the HEAD to the desired commit
+    - Does not affect the staging or working directories
+    Mixed
+    - If not option is specified, this is the default.
+    - Moves the HEAD to the desired commit
+    - Changes the staging directory 
+    - not the working directory.
+    Hard
+    - Moves the HEAD to the desired commit
+    - Changes both the staging and working directories
+```
+- `git reset --soft` - performs a soft reset
+    - rolls back to an old state but working and staging directories keep changes.
+    - This can be a useful way amend a series of previous commits
+    - after the reset the previous commits will be gone.
+- `git reset` and `git reset --mixed` - performs a mixed reset
+    - This leaves the working directory unchanged.
+    - Can be used to reorganize commits
+- `git reset --hard` - performs a hard reset
+    - Rolls back and deletes all changes.
+    - permanently destroys commits.
+- try to avoid resetting shared commits.
+- Mixed and Hard can be destructive, so be careful.
+- `git reset [--mixed|--soft|--hard] <tree-ish>`
+
+    ![Branch](Images/Reset.PNG)
 
 ## Merging
 
