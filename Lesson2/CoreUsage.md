@@ -1,3 +1,5 @@
+[<< Lesson1](../Lesson1/Setup.md) | **Lesson2** | [Lesson3 >>](../Lesson3/Branching.md)
+
 # Core Usage Tutorial
 **For this tutorial, I will be walking you through the most common functionality of git. This guide is an ongoing process and will be continously updated**
 

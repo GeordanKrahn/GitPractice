@@ -1,3 +1,5 @@
+[<< Lesson2](../Lesson2/CoreUsage.md) | **Lesson3** | [Lesson4 >>](../Lesson4/Remotes.md)
+
 # Using Branches
 *This is perhaps the most powerful aspect of version control. It is essential to be able to work in a team while not ruining eachothers work. Branches allow us to work on separate tasks without destroying the main branch. If the work is of good quality and little to no conflicts, then they will be merged. Branches with many conflicts or with poor quality code can be easily deleted without touching the main branch.*
 

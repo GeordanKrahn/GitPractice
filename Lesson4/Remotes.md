@@ -1,3 +1,5 @@
+[<< Lesson3](../Lesson3/Branching.md) | **Lesson4** | [Appendix >>](../Appendix/Appendix.md)
+
 # Working With Remotes
 *So far we have been working with Local repositories. Remote repositories are hosted on a network. There are many repository hosting services available, such as github. You could also host your on git server.*
 
@@ -160,7 +162,8 @@
 - The local branch remains however...
 
     ![Remotes](Images/Branch5.PNG)
-    - You will need to delete the local branch when you are done merging. `git branch -d <Branch>`
+    - You will need to delete the local branch when you are done merging. 
+    - `git branch -d <Branch>`
 
 * [Return To Top](#contents)
 ## Working With a Team
