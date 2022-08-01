@@ -17,7 +17,7 @@
     - D. [Cloning a Remote](#cloning-a-remote)
 2. [Working With a Remote](#working-with-a-remote)
     - A. [Pushing & Pulling](#pushing--pulling)
-    - B. [Merging](#merging)
+    - B. [Fetching & Merging](#fetching--merging)
     - C. [Checkout a Remote Branch](#checkout-a-remote-branch)
     - D. [Deleting Remote Branches](#deleting-remote-branches)
 3. [Working With a Team](#working-with-a-team)
@@ -105,14 +105,63 @@
 ### Pushing & Pulling
 - Use `git push` to push your changes to your remote.
 
-    
+    ![Remotes](Images/push2.PNG)
+
+- Use `git pull` to sync with the remote.
+
+    ![Remotes](Images/pull.PNG)
 
 * [Return To Top](#contents)
-### Merging
+### Fetching & Merging
+- There is another way to update the local repository. The `git fetch` command is similar to pull, but it does not automatically integrate the changes into the local repository. They need to be merged in manually.
+
+    ![Remotes](Images/Fetch.PNG)
+
+- After the fetch, the HEAD for the origin/main will be updated, but the local main will not be updated.
+- Use `git merge origin/main` to merge in the changes. Resolve any conflicts.
+
+    ![Remotes](Images/Merge.PNG)
+
+- If you are in a situation where the remote is ahead, and you have changes you want to push, you will be unable to push.
+- To ensure that you can, perform the following steps:
+
+    1.  `pull` or `fetch` the remote changes. `fetch` is safer here.
+    2.  Resolve any potential conflicts before merging in remote changes.
+    3.  `merge` in changes
+    4.  `push` the new changes.
+
 * [Return To Top](#contents)
 ### Checkout a Remote Branch
+- If there are additional remote branches, you will need to set up tracking on them.
+
+    ![Remotes](Images/pull2.PNG)
+
+- Using `git branch` we can see that we are not tracking the other branch.
+
+    ![Remotes](Images/Branch2.PNG)
+    - the `-r` flag shows the remote branches
+
+- Use `git branch <Name> <Branch>` to set up local tracking for the remote branch. `<Branch>` is the remote branch you want to track, and `<Name>` will be its local name.
+
+    ![Remotes](Images/Branch3.PNG)
+
+- Now when we look at our branches we can see the local changes reflected.
+
+    ![Remotes](Images/Branch4.PNG)
+
+- You can now checkout the branch and push and pull from the remote branch.
+
 * [Return To Top](#contents)
 ### Deleting Remote Branches
+- use `git push <Remote> :<Branch>` to delete a remote branch.
+
+    ![Remotes](Images/push3.PNG)
+
+- The local branch remains however...
+
+    ![Remotes](Images/Branch5.PNG)
+    - You will need to delete the local branch when you are done merging. `git branch -d <Branch>`
+
 * [Return To Top](#contents)
 ## Working With a Team
 
