@@ -64,7 +64,7 @@
 - and from here we can now commit our changes
 
     ![Git Status](Images/Status7.PNG)
-
+* [Return To Top](#contents)
 ### B. Git Diff
 - The Following Command will show you a comparrison between your working tree and a commit
 - `git diff` - This will display the changes to unstaged files
@@ -89,7 +89,7 @@
     - can use HEAD as argument, will use its SHA-1.
     - using `~n` where n is any number of parent levels to go back will replace with the argument with the necessary SHA-1 for that commit
 
-
+* [Return To Top](#contents)
 ### C. Git Show
 - When we only want to view a single commits changes in isolation, we can use `git show`
 
@@ -103,7 +103,7 @@
     - Like the Diff Tool, To exit, press `q`.
     - To display a full page, press `z`.
     - To print next line press `Enter`.
-    
+* [Return To Top](#contents)
 ### D. Git Log
 - `git log` - Displays information about the commit history
 
@@ -129,7 +129,7 @@
 - To exit the log before or when you reach the (END) statement you can press `q`.
 - To display a full page of results at once, press `z`.
 - To print the next line, press `Enter`.
-
+* [Return To Top](#contents)
 ## Understanding the Trees
 - To make the most out of using git, you should understand the trees
 ### A. Working Directory
@@ -143,7 +143,7 @@
 
     ![Git Status](Images/Add.PNG)
     - `git add .` this adds all changes in the current folder and all subfolders.
-
+* [Return To Top](#contents)
 ### B. Staging Directory
 - The staging directory is where all changes will remain until they are commited, or unstaged.
 - It is good practice to use `git status` to view your *tracked* changes.
@@ -152,7 +152,7 @@
 - `git commit -m`
 
     ![Git Status](Images/commit.PNG)
-
+* [Return To Top](#contents)
 ### C. Repository
 - This directory is where the tracked changes are saved.
 - Once a change has made it to this point, we will have a rigid history of that change until we delete our repository.
@@ -167,8 +167,9 @@
 
     ![Git Status](Images/push2.PNG)
     - Here we have a remote set up
-
+* [Return To Top](#contents)
 ## See Also
 - **[Lesson 3: Using Branches](../Lesson3/Branching.md)**
 - **[Appendix](../Appendix/Appendix.md)**
 - **[Main Menu](../README.md)**
+* [Return To Top](#contents)

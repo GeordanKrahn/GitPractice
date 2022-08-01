@@ -22,24 +22,24 @@ If you have not already have Git installed on your machine, do that
 
 ### 1.A: Get Git
 - you can find it [here](https://git-scm.com/)
-
+* [Return To Top](#contents)
 ### 1.B: Downloads
 - Navigate to Downloads
 
     ![SuccessImage](Images/Downloads.PNG)
-
+* [Return To Top](#contents)
 ### 1.C: Choose OS
 - Choose your OS and download
 
     ![SuccessImage](Images/Downloads2.PNG)
-
+* [Return To Top](#contents)
 ### 1.D: Install   
 - Depending on your OS the installation may differ, just go with the defaults for now.
 
 - You may have to keep clicking Next if this is your first time.
 
     ![SuccessImage](Images/Install.PNG)
-
+* [Return To Top](#contents)
 ### 1.E: Verify
 - After you have installed Git on your machine, type the following command into the terminal
 
@@ -54,7 +54,7 @@ If you have not already have Git installed on your machine, do that
     ![Command](Images/Bash2.PNG)
 
 - Congrats, you now have Git installed on your machine.
-
+* [Return To Top](#contents)
 ## Step 2: Create Directory
 ### 2.A: Create a new folder
 - You will now need a directory for git to track changes
@@ -65,7 +65,7 @@ If you have not already have Git installed on your machine, do that
     ![NewFolder](Images/newfolder.PNG)
 
 - Name your directory then open it
-
+* [Return To Top](#contents)
 ### 2.B: Open in Terminal
 - Open the directory in the Terminal or navigate to it via the CLI
     - **NOTE: *if you have spaces in the folder and file names, you will need the path to be in "quotes"***
@@ -93,7 +93,7 @@ If you have not already have Git installed on your machine, do that
 
     - optionally you may use the `dir` command and navigate manually
     - `ls` for Bash
-
+* [Return To Top](#contents)
 ## Step 3: Create a Git Repository
 - type the following command 
     ```
@@ -112,8 +112,9 @@ If you have not already have Git installed on your machine, do that
     ![Explorer](Images/Explorer.PNG)
 
 - Your new git repo has now been setup and will be able to keep track of any changes you make. In the next lesson I will demonstrate how to make use of your git repo
-
+* [Return To Top](#contents)
 ## See Also
 - **[Lesson 2: Core Usage](../Lesson2/CoreUsage.md)**
 - **[Appendix](../Appendix/Appendix.md)**
 - **[Main Menu](../README.md)**
+* [Return To Top](#contents)

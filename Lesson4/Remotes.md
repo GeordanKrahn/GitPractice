@@ -8,6 +8,8 @@
 
 - *Since this tutorial works with remotes, the examples will only use Visual Studio Code. This is to easily work with the Github repos without the need to supply credentials every time a push is made.*
 
+## Contents
+
 1. [Remotes](#remotes)
     - A. [Overview](#overview)
     - B. [Adding a Remote](#adding-a-remote)
@@ -38,7 +40,7 @@
 
 - When your local repository is ahead of your remote, push your changes. This will sync refs/heads and refs/remotes/origin.
 - If your local repository is behind, you will need to pull changes.
-
+* [Return To Top](#contents)
 ### Adding a Remote
 - On github, click on your profile picture, then select `your repositories`. 
 
@@ -76,14 +78,14 @@
     - REMEMBER TO USE YOUR OWN ACCOUNT NAME!
 
 - To remove a remote for any reason use `git remote rm <Name>`
-
+* [Return To Top](#contents)
 ### Creating Remote Branches
 - When the remote has been set up, you can select which branch should be tracked. The `-u` or `--set-upstream` flag will add tracking references on the remote repository. This shares the branch with others who can access the repository.
 - Use `git push -u origin main` which will update remote references for your main branch.
 - you may do this with other branches, provided the remote name and local name reflect this.
 
     ![Remotes](Images/push.PNG)
-
+* [Return To Top](#contents)
 ### Cloning a Remote
 - Cloning an existing remote is an easy way to set up a local repo for you to make changes.
 - open up an empty workspace to clone the repository into.
@@ -97,23 +99,24 @@
 
     ![Remotes](Images/Status.PNG)
     - The cloned repository is up to date.
-
+* [Return To Top](#contents)
 ## Working With a Remote
 
 ### Pushing & Pulling
-
+* [Return To Top](#contents)
 ### Merging
-
+* [Return To Top](#contents)
 ### Checkout a Remote Branch
-
+* [Return To Top](#contents)
 ### Deleting Remote Branches
-
+* [Return To Top](#contents)
 ## Working With a Team
 
 ### How to Enable Collaboration
-
+* [Return To Top](#contents)
 ### What is Collaboration?
-
+* [Return To Top](#contents)
 ## See Also
 - **[Appendix](../Appendix/Appendix.md)**
 - **[Main Menu](../README.md)**
+* [Return To Top](#contents)

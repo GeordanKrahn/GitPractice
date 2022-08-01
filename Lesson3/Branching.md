@@ -38,21 +38,21 @@ When we make changes to our project, especially in a team, it becomes necessary 
 - In Git, we start off with a **Main** branch.
 - We can create branches off of the **Main**.
 - We can create branches off of other branches too.
-
+* [Return To Top](#contents)
 ### View Branches
 - To view the branches in your repo, use `git branch`
 
     ![Branch](Images/Branch.PNG)
     - Here, **main** is the only branch
     - The current branch will be highlighted in green
-
+* [Return To Top](#contents)
 ## Using Branches
 
 ### The Current Branch
 - In the image above, there is only one branch
 - Remember our HEAD, When we make a commit to another branch the HEAD will point to the other branch instead of main. This would be the current branch. 
 - We can switch branches. HEAD will point to the most recent commit in the current branch.
-
+* [Return To Top](#contents)
 ### Create New Branch
 - use `git branch <branch name>` to create a new branch.
 
@@ -65,7 +65,7 @@ When we make changes to our project, especially in a team, it becomes necessary 
     ![Branch](Images/Branch3.PNG)
     - The branch *NewBranch* is listed
     - Notice that *main* is still the current branch
-
+* [Return To Top](#contents)
 ### Switching Branches
 - use the `git checkout <branch name>` command to switch to another branch.
 
@@ -125,18 +125,19 @@ When we make changes to our project, especially in a team, it becomes necessary 
 
    - *If there are conflicts, there are a few options. You may `commit` the changes, `discard` the changes, or `stash` the changes.*
 
-
+* [Return To Top](#contents)
 ### Comparing Branches
 - To compare a branch, just use `git diff <Branch name>..<Branch name>`
 
     ![Branch](Images/Diff.PNG)
-
+* [Return To Top](#contents)
 ### Renaming Branches
 - Use the `-m` flag of the `git branch` command to rename a branch
 - `git branch -m <old branch> <new branch>`
 
     ![Branch](Images/Branch5.PNG)
     - Notice the new name in the blue text.
+* [Return To Top](#contents)
 ### Deleting Branches
 - Maybe your changes wont be useful, or have too many conflicts to merge. Whatever the case, you this branch is no longer useful.
 
@@ -147,6 +148,7 @@ When we make changes to our project, especially in a team, it becomes necessary 
 
     ![Branch](Images/Branch7.PNG)
     * ***NOTE:** YOU CANNOT DELETE THE **CURRENT BRANCH***
+* [Return To Top](#contents)
 ### Resetting Branches
 - Resetting will change the state of the files in the staging index and working directory for the desired commit.
 - This will move the HEAD to point to the desired commit.
@@ -180,7 +182,7 @@ When we make changes to our project, especially in a team, it becomes necessary 
 - `git reset [--mixed|--soft|--hard] <tree-ish>`
 
     ![Branch](Images/Reset.PNG)
-
+* [Return To Top](#contents)
 ## Merging
 - Merging allows us to add the changes from a branch to a recieving branch.
 - There are 2 ways that a merge can occer
@@ -202,7 +204,7 @@ Only one branch has changes:
                 - branch1 -> branch2 -> branch3 -
 
 ```
-
+* [Return To Top](#contents)
 ### Merge
 - Lets assume changes were made
 
@@ -233,7 +235,7 @@ Only one branch has changes:
     --decorate  - prints out the ref names of the commits. 
     --oneline   - condenses the data to a single line.
     ```
-
+* [Return To Top](#contents)
 ### Conflicts
 - Conflicts occur when changes to the same lines in files appear on both branches.
 - You will need to decide which branches changes you want to keep.
@@ -244,7 +246,7 @@ Only one branch has changes:
 - The following is what happens when a merge is attempted.
 
     ![Branch](Images/Merge2.PNG)
-
+* [Return To Top](#contents)
 ### Resolving Conflicts
 - You can abort the merge, manually handle the changes, or let a tool handle the merge conflict. I will demonstrate how to manually handle the changes.
 - Your text editor should pop open after this so you can fix the conflicts. If not, you should inspect the files which are causing the conflicts and attempt to fix them.
@@ -261,7 +263,7 @@ Only one branch has changes:
     ![Branch](Images/Log5.PNG)
 
 - To abort the merge while in the MERGING state, use the `--abort` flag for the `git merge` command.
-
+* [Return To Top](#contents)
 ### Avoiding Conflicts
 **To prevent conflicts from occuring:**
 - try keeping changes atomic (single line changes)
@@ -283,7 +285,7 @@ Only one branch has changes:
     - One obvious way to fix this is by commiting your changes, but we can use the stash to store these changes if needed.
 
 - When you stash changes, they will be available from all other branches.
-
+* [Return To Top](#contents)
 ### Saving
 - Use `git stash save "title"` to stash your changes
 
@@ -291,7 +293,7 @@ Only one branch has changes:
     - Note the status after stashing
 
 - After stashing, the working directory is now empty.
-
+* [Return To Top](#contents)
 ### Viewing
 - Use the `git stash list` command to view a set of changes in the stash without loading them.
 
@@ -304,7 +306,7 @@ Only one branch has changes:
     - `-p` allows us to see what the changes are.
 
     ![Branch](Images/Stash3.PNG)
-
+* [Return To Top](#contents)
 ### Receiving
 - use `git stash pop` command to add the stash to the working directory. Be careful of conflicts. Resolve them first.
 - Can also use `git stash apply`, which does not remove the changes from the stash.
@@ -312,7 +314,7 @@ Only one branch has changes:
     ![Branch](Images/Stash4.PNG)
     - Notice how the stash list is empty, `pop` removes the stashed changes.
     - use `apply` to load the changes without removing the stash.
-
+* [Return To Top](#contents)
 ### Deleting
 - `pop` will delete the entry after it is loaded.
 - If you use `apply` to load changes and end up committing them, make sure you delete the stash for those changes.
@@ -321,8 +323,9 @@ Only one branch has changes:
     ![Branch](Images/Stash5.PNG)
 
 - use `git stash clear` to remove all sets of stashed changes
-
+* [Return To Top](#contents)
 ## See Also
 - **[Lesson 4: Working With Remotes](../Lesson4/Remotes.md)**
 - **[Appendix](../Appendix/Appendix.md)**
 - **[Main Menu](../README.md)**
+* [Return To Top](#contents)
