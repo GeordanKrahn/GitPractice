@@ -1,3 +1,5 @@
+|| **Main Menu** | [Lesson1 >>](Lesson1/Setup.md)
+
 # Git Information
 
 - **This tutorial will demonstrate git commands, usage, branching and other important information on Git. This can be used as a reference guide**

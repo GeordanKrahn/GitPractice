@@ -96,3 +96,10 @@
 |`git clean -n`|does a *dry run* and shows you what changes *would* be made|
 |`git clean -f`|deletes the untracked files|
 |`git clean -d`|recurses into untracked directories. does nothing if any path is specified|
+
+* [Return To Top](#git-commands)
+
+## Return
+- **[Appendix](Appendix.md)**
+- **[Main Menu](../README.md)**
+

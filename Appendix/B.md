@@ -27,3 +27,9 @@
 - will point to the parent of the next commit
 - when a new commit is made the HEAD pointer will point to the next parent
 - The HEAD can move between different branches in the repository
+
+* [Return To Top](#git-workflow)
+
+## Return
+- **[Appendix](Appendix.md)**
+- **[Main Menu](../README.md)**
