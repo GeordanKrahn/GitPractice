@@ -24,7 +24,6 @@
     - D. [Deleting Remote Branches](#deleting-remote-branches)
 3. [Working With a Team](#working-with-a-team)
     - A. [How to Enable Collaboration](#how-to-enable-collaboration)
-    - B. [What is Collaboration?](#what-is-collaboration)
 4. [See Also](#see-also)
 
 ## Remotes
@@ -169,8 +168,36 @@
 ## Working With a Team
 
 ### How to Enable Collaboration
+- If you have a public or open source project which you would like to open up to collaboration, or a private project only a few trusted people can work on, you can enable collaboration on Github easily.
+
+- First, make sure you are signed into your Github account.
+
+- On your repos github page, click on `Settings`
+
+    ![Remotes](Images/Github.PNG)
+
+- Next click on `Collaborators`
+
+    ![Remotes](Images/Github2.PNG)
+
+- You will be asked to enter your password
+- Next, click on `Add People` in the Manage Access section
+
+    ![Remotes](Images/Github3.PNG)
+
+- Enter the `Email`, `Username`, or `Full Name` of the collaborator
+
+    ![Remotes](Images/Github4.PNG)
+    - After clicking on the collaborator, click `add`.
+
+- After that, Github will send an email to the Collaborator to confirm the invitation.
+
 * [Return To Top](#contents)
-### What is Collaboration?
+
+**What is Collaboration?**
+- As teams will differ from project to project, the workflow will also be differ. 
+- Collaboration is different depending on the project, the team, project leader, etc...
+
 * [Return To Top](#contents)
 ## See Also
 - **[Appendix](../Appendix/Appendix.md)**
