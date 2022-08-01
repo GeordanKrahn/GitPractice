@@ -103,6 +103,10 @@
 ## Working With a Remote
 
 ### Pushing & Pulling
+- Use `git push` to push your changes to your remote.
+
+    
+
 * [Return To Top](#contents)
 ### Merging
 * [Return To Top](#contents)
