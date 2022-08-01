@@ -1,4 +1,4 @@
-[<< Main Menu](../Lesson1/Setup.md) | Lesson1 | [Lesson2 >>](../Lesson2/CoreUsage.md)
+[<< Main Menu](../README.md) | **Lesson1** | [Lesson2 >>](../Lesson2/CoreUsage.md)
 
 # Setup Tutorial
 **For this tutorial, I will be walking you through how to set up a simple repository on your machine. This guide is an ongoing process and will be continously updated**
